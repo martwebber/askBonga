@@ -1,0 +1,142 @@
+.error {
+	color: red;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.message {
+	color: green;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.combobox {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 12px;
+}
+
+.regular-text {
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	font-style:normal;
+}
+
+.border {
+	border-style:solid;
+	border-width:1px;
+	border-color:#C1C1C1;
+}
+
+.none {
+	border-style:none;
+	border-width:0px;
+}
+
+/* Input styles */
+/* For IE */
+.inputtext {
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	font-style:normal;
+}
+
+.inputbutton {
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	font-style:normal;
+}
+
+.inputpassword {
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	font-style:normal;
+}
+
+/* For other browsers */
+input[type=text] {
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	font-style:normal;
+} 
+
+input[type=password] {
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	font-style:normal;
+} 
+
+input[type=submit] {
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	font-style:normal;
+}
+
+input[type=button] {
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	font-style:normal;
+}
+
+/* Table styles */
+.tablebody {
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+	font-style:normal;
+}
+
+.tableheader {
+	background:#C1C1C1 none repeat scroll 0%;
+	color:#000000;
+	text-align: left;
+    font-weight: bold;
+}
+
+.evenrow {
+	background-color:#ECECEC;
+}
+
+.oddrow {
+	background-color:#FFFFFF;
+}
+
+th {
+	background:#C1C1C1 none repeat scroll 0%;
+	color:#000000;
+	text-align: left;
+    font-weight: bold;
+}
+
+/* Anchor sytles */
+a {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:10px;
+}
+a:link {
+	
+	color:green;
+	text-decoration:underline;
+}
+
+a:visited {
+	color:green;
+	text-decoration:underline;
+}
+a:hover {
+	color:blue;
+	text-decoration:underline;
+}
+a:active {
+	color:red;
+	text-decoration:underline;
+}

@@ -1,0 +1,10 @@
+This is the app-bonga-link entry in the Ingress resource under
+spec > rules > http > paths:
+	{
+	  "path": "/bongalink/*",
+	  "backend": {
+		"serviceName": "app-bonga-link-service",
+		"servicePort": 80
+	  }
+	}
+	

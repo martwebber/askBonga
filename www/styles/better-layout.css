@@ -1,0 +1,110 @@
+body {
+	/* background:transparent url(./images/background-2.jpg) no-repeat scroll left top;*/
+	/* background:transparent url(../images/saf_logo.jpg) repeat; */
+	color:#333333;
+	/*background-color:#7EB03F;*/
+    background-color:#CACED1;
+	font-family:"Arial","Tahoma","MS Sans Serif",sans-serif;
+	font-size:10px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+}
+
+#container {
+	/* height:100%; */
+	margin:0pt 100px auto 100px;
+	/*overflow:hidden;*/
+	background-color:#CACED1;
+	padding:10px;
+	/* width:900px; */
+	/* margin-left: 200px;
+	margin-right:200px; */
+}
+
+html>body #container {
+	margin-left: 100px;
+	margin-right:100px;
+}
+
+#header {
+	height:61px;
+	/* border: 1px solid #000; */
+	background-color:#FFF;
+}
+
+#content-wrap {
+	background-color:#FFF;
+	height:100%;	
+	/*overflow:hidden;*/
+	overflow:auto;
+	/* width:900px; */
+}
+
+#center {
+	position: relative;
+	margin-left: 200px;
+	margin-right: 200px;
+	/*float:right;*/
+	/*border: 1px solid #000;*/
+	/*margin:10px auto;*/
+	/*width:395px;*/
+}
+
+#center-in {
+	color:#555555;
+	padding:0pt 15px;
+}
+
+.cspacer {
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.mainlist, .clear {
+	clear:both;
+}
+
+.realated-col {
+	padding:0pt 10px;
+	width:190px;
+	border: 1px solid #000;
+}
+.alignright {
+	float:right;
+}
+
+#sidebar-in {
+	margin:10px;
+}
+
+div#myContent {
+	overflow:hidden;
+	text-align:left;
+	/*width:450px;*/
+	/*border: 1px solid #000;*/
+}
+
+#sidebar-left {	
+	/* background:transparent url(../images/saf_logo.jpg) repeat-y scroll 0%;*/
+	float:left;
+	/* margin:300px auto; */
+	width:195px;
+	padding: 10px 10px;
+	/*border: 1px solid #000;*/
+}
+
+#sidebar-right {
+	/* background:transparent url(../images/saf_logo.jpg) repeat-y scroll 0%;*/
+	float:right;
+	/* margin:300px auto; */
+	width:195px;
+	/*border: 1px solid #000;*/
+}
+
+* {
+	margin:0pt;
+	padding:0pt;
+}

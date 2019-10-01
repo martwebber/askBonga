@@ -1,0 +1,134 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: app-bonga-link
+  name: app-bonga-link-deployment
+  namespace: bonga-link
+spec:
+  selector:
+    matchLabels:
+      app: app-bonga-link
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: app-bonga-link
+    spec:
+      containers:
+      - name: app-bonga-link
+        image: svdt5kubreg01.safaricom.net/app-bonga-link:v1.0.0
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
+        hostAliases:
+        - ip: 127.0.0.2
+          hostnames:
+          - svdt3web01.safaricom.net
+        - ip: 172.28.227.32
+          hostnames:
+          - svdt3web01
+        - ip: 172.29.212.31
+          hostnames:
+          - svdt1twire02.safaricom.net
+        - ip: 172.29.221.55
+          hostnames:
+          - hq2fr1tibbwext1
+        - ip: 172.28.227.54
+          hostnames:
+          - svdt3dealerportal01.safaricom.net
+        - ip: 172.29.229.69
+          hostnames:
+          - relay.safaricom.co.ke
+        - ip: 172.29.200.99
+          hostnames:
+          - safaricom.net
+        - ip: 172.29.213.7
+          hostnames:
+          - svdt1commserve.safaricom.net
+        - ip: 172.28.227.32
+          hostnames:
+          - safintranet.safaricom.net
+        - ip: 172.29.226.17
+          hostnames:
+          - svhq1-scan
+        - ip: 172.25.241.3
+          hostnames:
+          - svjcc1-scan
+        - ip: 172.25.200.92
+          hostnames:
+          - svdt4ma01.safaricom.net
+        - ip: 172.25.200.93
+          hostnames:
+          - svdt4ma02.safaricom.net
+        - ip: 172.25.200.94
+          hostnames:
+          - svdt4ma03.safaricom.net
+        - ip: 172.25.200.95
+          hostnames:
+          - svdt4ma04.safaricom.net
+        - ip: 172.25.200.96
+          hostnames:
+          - svdt4ma05.safaricom.net
+        - ip: 172.25.200.97
+          hostnames:
+          - svdt4ma06.safaricom.net
+        - ip: 172.29.234.29
+          hostnames:
+          - svdt1ma01.safaricom.net
+        - ip: 172.29.234.30
+          hostnames:
+          - svdt1ma02.safaricom.net 
+        - ip: 172.29.234.27
+          hostnames:
+          - svdt1ma03.safaricom.net
+        - ip: 172.29.234.28
+          hostnames:
+          - svdt1ma04.safaricom.net
+        - ip: 172.28.234.35
+          hostnames:
+          - svdt2ma01.safaricom.net
+        - ip: 172.28.234.36
+          hostnames:
+          - svdt2ma02.safaricom.net
+        - ip: 172.28.234.37
+          hostnames:
+          - svdt2ma03.safaricom.net
+        - ip: 172.28.234.38
+          hostnames:
+          - svdt2ma04.safaricom.net
+        - ip: 172.28.234.39
+          hostnames:
+          - svdt2ma05.safaricom.net
+        - ip: 172.28.234.40
+          hostnames:
+          - svdt2ma06.safaricom.net
+        - ip: 172.29.226.19
+          hostnames:
+          - svdt1-scan
+        - ip: 10.184.30.9
+          hostnames:
+          - svthk1-scan
+        - ip: 10.184.30.10
+          hostnames:
+          - svthk1-scan
+        - ip: 10.184.30.11
+          hostnames:
+          - svthk1-scan  
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-bonga-link-service
+  namespace: bonga-link
+  labels:
+    run: app-bonga-link-service
+spec:
+  type: NodePort
+  ports:
+  - name: ms-securenet-port
+    port: 80
+    protocol: TCP
+  selector:
+    app: app-bonga-link

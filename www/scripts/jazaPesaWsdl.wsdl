@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by TIBCO WSDL--><wsdl:definitions name="Untitled" targetNamespace="http://xmlns.example.com/1542633705052" xmlns:ns0="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd11" xmlns:ns2="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd9" xmlns:ns1="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd12" xmlns:ns4="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd" xmlns:ns3="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd10" xmlns:ns6="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd3" xmlns:ns5="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd6" xmlns:ns8="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns7="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd4" xmlns:ns9="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd5" xmlns:ns11="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd8" xmlns:ns10="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd7" xmlns:tns="http://xmlns.example.com/1542633705052" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd11" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd11" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Channel" type="xs:string"/>
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns0:MSISDN"/>
+            <xs:element ref="ns0:Channel"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MSISDN" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd4" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd4" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns7:MSISDN"/>
+            <xs:element ref="ns7:Target"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MSISDN" type="xs:string"/>
+      <xs:element name="Target" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd10" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd10" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="CurrentDate" type="xs:string"/>
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns3:ResultCode"/>
+            <xs:element ref="ns3:ResultDescription"/>
+            <xs:element ref="ns3:MSISDN"/>
+            <xs:element ref="ns3:Target" minOccurs="0"/>
+            <xs:element ref="ns3:CurrentDate"/>
+            <xs:element ref="ns3:TotalTransactions" minOccurs="0"/>
+            <xs:element ref="ns3:History"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DatePosted" type="xs:string"/>
+      <xs:element name="Description" type="xs:string"/>
+      <xs:element name="Event" type="xs:string"/>
+      <xs:element name="EventInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns3:DatePosted"/>
+            <xs:element ref="ns3:Event"/>
+            <xs:element ref="ns3:Description"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="History">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns3:EventInfo" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MSISDN" type="xs:string"/>
+      <xs:element name="ResultCode" type="xs:string"/>
+      <xs:element name="ResultDescription" type="xs:string"/>
+      <xs:element name="Target" type="xs:string"/>
+      <xs:element name="TotalTransactions" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd3" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Channel" type="xs:string"/>
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns6:MSISDN"/>
+            <xs:element ref="ns6:Channel"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MSISDN" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd2" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns8:MSISDN"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MSISDN" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd12" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd12" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Award" type="xs:string"/>
+      <xs:element name="Category" type="xs:string"/>
+      <xs:element name="Comments" type="xs:string"/>
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns1:ResultCode"/>
+            <xs:element ref="ns1:ResultDescription"/>
+            <xs:element ref="ns1:MSISDN"/>
+            <xs:element ref="ns1:FullNames" minOccurs="0"/>
+            <xs:element ref="ns1:Category" minOccurs="0"/>
+            <xs:element ref="ns1:Comments" minOccurs="0"/>
+            <xs:element ref="ns1:Rewards" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DateRewarded" type="xs:string"/>
+      <xs:element name="FullNames" type="xs:string"/>
+      <xs:element name="MSISDN" type="xs:string"/>
+      <xs:element name="MpesaTransactionID" type="xs:string"/>
+      <xs:element name="ResultCode" type="xs:string"/>
+      <xs:element name="ResultDescription" type="xs:string"/>
+      <xs:element name="Reward">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns1:MpesaTransactionID"/>
+            <xs:element ref="ns1:DateRewarded"/>
+            <xs:element ref="ns1:Award"/>
+            <xs:element ref="ns1:Comments" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Rewards">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns1:Reward" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd8" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd8" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Amount" type="xs:string"/>
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns11:ResultCode"/>
+            <xs:element ref="ns11:ResultDescription"/>
+            <xs:element ref="ns11:MSISDN"/>
+            <xs:element ref="ns11:TotalTransactions" minOccurs="0"/>
+            <xs:element ref="ns11:Target" minOccurs="0"/>
+            <xs:element ref="ns11:History" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DatePosted" type="xs:string"/>
+      <xs:element name="DebitPartyName" type="xs:string"/>
+      <xs:element name="DebitPartyShortCode" type="xs:string"/>
+      <xs:element name="EventInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns11:MSISDN"/>
+            <xs:element ref="ns11:MpesaTransactionID"/>
+            <xs:element ref="ns11:DatePosted"/>
+            <xs:element ref="ns11:Amount"/>
+            <xs:element ref="ns11:DebitPartyName" minOccurs="0"/>
+            <xs:element ref="ns11:DebitPartyShortCode" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="History">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns11:EventInfo" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MSISDN" type="xs:string"/>
+      <xs:element name="MpesaTransactionID" type="xs:string"/>
+      <xs:element name="ResultCode" type="xs:string"/>
+      <xs:element name="ResultDescription" type="xs:string"/>
+      <xs:element name="Target" nillable="true" type="xs:string"/>
+      <xs:element name="TotalTransactions" nillable="true" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd7" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd7" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns10:MSISDN"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MSISDN" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd6" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd6" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns5:MSISDN"/>
+            <xs:element ref="ns5:Flag"/>
+            <xs:element ref="ns5:ResponseMessage"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Flag" type="xs:string"/>
+      <xs:element name="MSISDN" type="xs:string"/>
+      <xs:element name="ResponseMessage" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd5" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd5" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns9:MSISDN"/>
+            <xs:element ref="ns9:Flag"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Flag" type="xs:string"/>
+      <xs:element name="MSISDN" type="xs:string"/>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="Channel" type="xs:string"/>
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="MSISDN" type="xs:string"/>
+            <xs:element name="Flag" type="xs:string"/>
+            <xs:element ref="ns4:Channel"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema targetNamespace="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd9" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.tibco.com/schemas/B2C_Campaign/SharedResources/Schema/Schema.xsd9" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="CustomerInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ns2:MSISDN"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MSISDN" type="xs:string"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:service name="CustomerInfoWSDL-service2">
+    <wsdl:port name="CustomerEndpoint2" binding="tns:CustomerEndpoint2Binding">
+      <soap:address location="http://172.29.65.51:2020/jaza-pesa"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:portType name="Customer">
+    <wsdl:operation name="CheckWinnings">
+      <wsdl:input message="tns:CheckWinningsRequest"/>
+      <wsdl:output message="tns:CheckWinningsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerHistory">
+      <wsdl:input message="tns:CustomerHistoryRequest"/>
+      <wsdl:output message="tns:CustomerHistoryResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ToggleOptIn">
+      <wsdl:input message="tns:ToggleOptInRequest"/>
+      <wsdl:output message="tns:ToggleOptInResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CheckTarget">
+      <wsdl:input message="tns:CheckTargetRequest"/>
+      <wsdl:output message="tns:CheckTargetResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCustomerStatus">
+      <wsdl:input message="tns:CheckCustomerStatusRequest"/>
+      <wsdl:output message="tns:CheckCustomerStatusResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerAccumulationHistory">
+      <wsdl:input message="tns:CustomerAccumulationHistoryRequest"/>
+      <wsdl:output message="tns:CustomerAccumulationHistoryResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomerEndpoint2Binding" type="tns:Customer">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CheckWinnings">
+      <soap:operation style="document" soapAction="/BusinessProcesses/MainProcesses/CustomerInfoWSDL-service2.serviceagent//CheckWinnings"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="CheckWinningsRequest"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="CheckWinningsResponse"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerHistory">
+      <soap:operation style="document" soapAction="/BusinessProcesses/MainProcesses/CustomerInfoWSDL-service2.serviceagent/CustomerEndpoint2/CustomerHistory"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="CustomerHistoryRequest"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="CustomerHistoryResponse"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ToggleOptIn">
+      <soap:operation style="document" soapAction="/BusinessProcesses/MainProcesses/CustomerInfoWSDL-service2.serviceagent/CustomerEndpoint2/ToggleOptIn"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="ToggleOptInRequest"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="ToggleOptInResponse"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckTarget">
+      <soap:operation style="document" soapAction="/BusinessProcesses/MainProcesses/CustomerInfoWSDL-service2.serviceagent/CustomerEndpoint2/CheckTarget"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="CheckTargetRequest"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="CheckTargetResponse"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCustomerStatus">
+      <soap:operation style="document" soapAction="/BusinessProcesses/MainProcesses/CustomerInfoWSDL-service2.serviceagent/CustomerEndpoint2/CheckCustomerStatus"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="CheckCustomerStatusRequest"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="CheckCustomerStatusResponse"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerAccumulationHistory">
+      <soap:operation style="document" soapAction="/BusinessProcesses/MainProcesses/CustomerInfoWSDL-service2.serviceagent/CustomerEndpoint2/CustomerAccumulationHistory"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="CustomerAccumulationHistoryRequest"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="CustomerAccumulationHistoryResponse"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:message name="CheckWinningsRequest">
+    <wsdl:part name="CheckWinningsRequest" element="ns0:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="CheckWinningsResponse">
+    <wsdl:part name="CheckWinningsResponse" element="ns1:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="CustomerHistoryRequest">
+    <wsdl:part name="CustomerHistoryRequest" element="ns2:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="CustomerHistoryResponse">
+    <wsdl:part name="CustomerHistoryResponse" element="ns3:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="ToggleOptInRequest">
+    <wsdl:part name="ToggleOptInRequest" element="ns4:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="ToggleOptInResponse">
+    <wsdl:part name="ToggleOptInResponse" element="ns5:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="CheckTargetRequest">
+    <wsdl:part name="CheckTargetRequest" element="ns6:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="CheckTargetResponse">
+    <wsdl:part name="CheckTargetResponse" element="ns7:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="CheckCustomerStatusRequest">
+    <wsdl:part name="CheckCustomerStatusRequest" element="ns8:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="CheckCustomerStatusResponse">
+    <wsdl:part name="CheckCustomerStatusResponse" element="ns9:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="CustomerAccumulationHistoryRequest">
+    <wsdl:part name="CustomerAccumulationHistoryRequest" element="ns10:CustomerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="CustomerAccumulationHistoryResponse">
+    <wsdl:part name="CustomerAccumulationHistoryResponse" element="ns11:CustomerInfo"/>
+  </wsdl:message>
+</wsdl:definitions>
